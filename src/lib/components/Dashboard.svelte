@@ -3,6 +3,7 @@
 
 	import Clock from "./Clock.svelte";
 	import Date from "./Date.svelte";
+	import { fly, slide } from "svelte/transition";
 
 	let hour: string;
 	let minute: string;
@@ -18,7 +19,7 @@
 	setInterval(updateClock, 10);
 </script>
 
-<div class="dashboard-container">
+<div class="dashboard-container" transition:slide>
 	<div class="dashboard">
 		<Clock {hour} {minute} />
 		<div class="stats">

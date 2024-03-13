@@ -2,14 +2,41 @@
 
 
 :root {
-    font-family: "Rubik", sans-serif;
+    --font-family: "Rubik", sans-serif;
     --heading-font-color: #fff;
     --text-font-color: #d1d1d1;
 }
 
-html, body {
+html,
+body {
+    font-family: var(--font-family);
     margin: 0;
     padding: 0;
     background-color: #121212;
 }
 
+input {
+    background-color: rgb(30, 30, 30);
+    border: 1px solid rgba(128, 128, 128, 0.536);
+    color: var(--text-font-color);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 16px;
+    margin: 1px 0px;
+    font-family: var(--font-family);
+    box-sizing: border-box;
+}
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}
