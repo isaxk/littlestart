@@ -39,8 +39,8 @@
 		<div class="links">
 			{#each data.links as link, i}
 				<Link
-					name={link.name}
-					href={link.href}
+					bind:name={link.name}
+					bind:href={link.href}
 					on:delete={() => deleteBookmark(i)}
 				/>
 			{/each}
